@@ -13,7 +13,6 @@ export const services: Service[] = [
       "Suivi quotidien du budget et des résultats",
     ],
     icon: Target,
-    image:'c:\Users\PC\Documents\Screenshot 2026-08-28 013527.png',
     whatsappMessage: WHATSAPP_MESSAGES.metaAds,
   },
   {

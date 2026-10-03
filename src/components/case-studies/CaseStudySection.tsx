@@ -2,7 +2,7 @@ import Eyebrow from "@/components/ui/Eyebrow";
 import Reveal from "@/components/ui/Reveal";
 import Button from "@/components/ui/Button";
 import CaseStudyCard from "./CaseStudyCard";
-import { cases } from "@/data/cases";
+import { cases } from "@/app/data/cases";
 export default function CaseStudySection() {
   return (
     <section id="etudes" className="py-16 md:py-22">

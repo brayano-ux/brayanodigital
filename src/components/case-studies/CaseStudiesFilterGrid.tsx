@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import CaseStudyCard from "./CaseStudyCard";
-import { cases } from "@/data/cases";
+import { cases } from "@/app/data/cases";
 import { cn } from "@/lib/utils";
 import type { CaseStudy } from "@/types";
 

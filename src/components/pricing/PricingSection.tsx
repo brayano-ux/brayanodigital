@@ -2,7 +2,7 @@ import { Check } from "lucide-react";
 import Eyebrow from "@/components/ui/Eyebrow";
 import Reveal from "@/components/ui/Reveal";
 import Button from "@/components/ui/Button";
-import { pricingPlans } from "@/data/pricing";
+import { pricingPlans } from "@/app/data/pricing";
 import { cn } from "@/lib/utils";
 
 export default function PricingSection() {

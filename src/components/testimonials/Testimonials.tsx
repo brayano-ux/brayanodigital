@@ -1,7 +1,7 @@
 import Eyebrow from "@/components/ui/Eyebrow";
 import Reveal from "@/components/ui/Reveal";
 import ImagePlaceholder from "@/components/ui/ImagePlaceholder";
-import { testimonials } from "@/data/testimonials";
+import { testimonials } from "@/app/data/testimonials";
 
 export default function Testimonials() {
   return (

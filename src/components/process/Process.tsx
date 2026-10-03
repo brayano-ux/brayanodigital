@@ -1,6 +1,6 @@
 import Eyebrow from "@/components/ui/Eyebrow";
 import Reveal from "@/components/ui/Reveal";
-import { processSteps } from "@/data/process";
+import { processSteps } from "@/app/data/process";
 
 export default function Process() {
   return (

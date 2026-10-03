@@ -1,7 +1,7 @@
 import Eyebrow from "@/components/ui/Eyebrow";
 import Reveal from "@/components/ui/Reveal";
 import FaqAccordion from "./FaqAccordion";
-import { faqItems } from "@/data/faq";
+import { faqItems } from "@/app/data/faq";
 
 export default function FaqSection() {
   return (
