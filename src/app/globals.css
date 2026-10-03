@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+:root {
+  --navy: #0b1220;
+  --navy-soft: #111c2e;
+  --green: #22c55e;
+  --green-dark: #16a34a;
+  --blue: #2563eb;
+  --bg: #f8fafc;
+  --text: #111827;
+  --text-secondary: #64748b;
+  --border: #e2e8f0;
+}
+
+@theme inline {
+  --color-navy: var(--navy);
+  --color-navy-soft: var(--navy-soft);
+  --color-green: var(--green);
+  --color-green-dark: var(--green-dark);
+  --color-blue: var(--blue);
+  --color-bg: var(--bg);
+  --color-text: var(--text);
+  --color-text-secondary: var(--text-secondary);
+  --color-border: var(--border);
+  --font-sans: var(--font-manrope);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+::selection {
+  background: var(--green);
+  color: #06210f;
+}
+
+:focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: 2px;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: -90;
+  }
+}
+
+@keyframes pulseFade {
+  0%,
+  100% {
+    opacity: 0.35;
+    transform: scale(0.9);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.15);
+  }
+}
+
+.graph-line-active {
+  stroke-dasharray: 5 4;
+  animation: dash 3.2s linear infinite;
+}
+
+.graph-pulse {
+  animation: pulseFade 2.4s ease-in-out infinite;
+  transform-origin: center;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .graph-line-active,
+  .graph-pulse {
+    animation: none;
+  }
+}
